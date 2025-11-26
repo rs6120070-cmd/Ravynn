@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Bats - Premium Sports Gear</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #0D0D0D;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #0D0D0D;
+            border-bottom: 2px solid #2979FF;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #2979FF !important;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #2979FF; }
+            to { text-shadow: 0 0 20px #2979FF, 0 0 30px #2979FF; }
+        }
+        .nav-link {
+            color: #FFFFFF !important;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #2979FF !important;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 100%);
+            padding: 100px 0;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #2979FF;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section {
+            padding: 80px 0;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .product-card {
+            background-color: #111;
+            border: 1px solid #2979FF;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(41, 121, 255, 0.3);
+        }
+        .btn-primary {
+            background-color: #2979FF;
+            border-color: #2979FF;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056CC;
+        }
+        .footer {
+            background-color: #0D0D0D;
+            border-top: 2px solid #2979FF;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #1A1A1A;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #2979FF;
+            animation: zoomIn 1s ease-out;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #2979FF;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="logo"></div> Ravynn
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#premium">Premium</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bestselling">Best Selling</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Elite Bats</h1>
+            <p>Premium sports gear for the ultimate performance.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Elite Bats is a premium sports brand dedicated to crafting high-quality baseball bats with cutting-edge technology. Our products are designed for athletes who demand excellence.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.0rSkcWgDO49gNKs-LlO86AHaSB?rs=1&pid=ImgDetMain&o=7&rm=3" alt="SS BAT" class="img-fluid product-img">
+                        <h3>    </h3>
+                        <h2>SS</h2>
+                        <p>Model: CD-100</p>
+                        <p>Price: $75</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.pVmNyZnq4_R5bmCJwPzdhQHaJ-?rs=1&pid=ImgDetMain&o=7&rm=3" alt="KOOKABURRA BAT" class="img-fluid product-img">
+                        <h3>    </h3>
+                        <h2>KOOKABURRA</h2>
+                        <p>Model: AB-200</p>
+                        <p>Price: $75</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://th.bing.com/th/id/R.78b4a8573f249d458eac04a044cae43d?rik=xZACbTAiQua91Q&riu=http%3a%2f%2fcricketdirect.co.uk%2fcdn%2fshop%2ffiles%2fTONSilverEdition-Main.jpg%3fv%3d1712754254&ehk=WpD4E15GdnrQ%2fvbUJJ%2b5hwBmbfgs0aDXRMAJEoYCcL4%3d&risl=&pid=ImgRaw&r=0" alt="Composite Bat" class="img-fluid product-img">
+                        <h3>    </h3>
+                        <h2>TON</h2>
+                        <p>Model: CB-300</p>
+                        <p>Price: $100</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Products Section -->
+    <section id="premium" class="section">
+        <div class="container">
+            <h2>Premium Products</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="https://www.romida.co.uk/wp-content/uploads/2022/02/Gray-Nicolls-Ultra-Players-Group.jpg" alt="pro bat" class="img-fluid product-img">
+                        <h3>   </h3>
+                        <h2>GRAY-NICOLLS</h2>
+                        <p>Model: PS-500</p>
+                        <p>Price: $150</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="https://cricketwarehouse.com.au/cdn/shop/files/dsc-xlite-25-senior-cricket-bat-274620.jpg?v=1721858975&width=1200" alt="carbon bat" class="img-fluid product-img">
+                        <h3>   </h3>
+                        <h2>DSC</h2>
+                        <p>Model: EC-600</p>
+                        <p>Price: $200</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Selling Section -->
+    <section id="bestselling" class="section">
+        <div class="container">
+            <h2>Best Selling</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="https://sjsports.com.au/cdn/shop/products/mrf-genius-vk-1000x1063_1fad8da0-044d-4750-9ac5-1efbe2b2b462.jpg?v=1681467935" alt="MRF" class="img-fluid product-img">
+                        <h3>   </h3>
+                        <h3>MRF</h3>
+                        <p>Model: TS-400</p>
+                        <p>Price: $120</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.lA0epIyZ4WESlWIgMVOBlAHaF3?rs=1&pid=ImgDetMain&o=7&rm=3" alt="SG" class="img-fluid product-img">
+                        <h3>   </h3>
+                        <h3>SG</h3>
+                        <p>Model: PA-250</p>
+                        <p>Price: $85</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Elite Bats. All rights reserved.</p>
+            <p>Follow us on social media for the latest updates.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+</body>
+</html>
